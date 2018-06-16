@@ -11,19 +11,30 @@
 
 <body>
 
-  <div id="container">
-    <div id="row">
-      <div><h2>GifTastic!</h2></div>
+  <h2>FOOD GIFS!</h2>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9">
+        <div id="foodButtons"></div>
+      </div>
+          
+      <div class="col-sm-3">
+        <form id="food-form">
+          <label for="food-input">Add a food: </label><br>
+          <input type="text" id="food-input"><br>
+
+          <input id="add-food" type="submit" value="Submit">
+        </form>
+      </div>
     </div>
   </div>
 
-
-
-
+  <div id="foodGifs"></div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
 
 </body>
 

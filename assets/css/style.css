@@ -1,8 +1,21 @@
 body {
     background: url(../images/stardust.png);
+    color: white;
 }
 h2 {
-    color: white;
     margin-top: 20px;
     text-align: center;
+}
+
+.food {
+    margin: 10px;
+}
+
+#add-food {
+    margin-top: 10px;
+}
+
+.newDiv {
+    float: left;
+    margin: 10px;
 }
