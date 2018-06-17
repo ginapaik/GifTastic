@@ -30,13 +30,17 @@ function renderButtons() {
     $("#food-input").val("");
     // calling renderButtons which handles the processing of our foodList array
     renderButtons();
+    newButton();
+    
   });
 
   renderButtons();
-
+  newButton();
   
-  // Generating gifs and ratings when buttons are clicked
-  $("button").on("click", function() {
+  // Generating gifs and ratings when buttons are clicked. I also had to create the button click function within a function called "newButton" 
+  // in order to get the newly added buttons to generate gifs upon being clicked
+  function newButton() {
+    $("button").on("click", function() {
     // clears out previous gifs
     $("#foodGifs").empty();
     var food = $(this).attr("data-name");
@@ -75,7 +79,7 @@ function renderButtons() {
           $("#foodGifs").prepend(foodDiv);
         }
 
-
+        // Clicking gifs to pause and animate
         $("img").on("click", function() {
             var state = $(this).attr("data-state");
             if (state = "animate") {
@@ -91,4 +95,7 @@ function renderButtons() {
       });
   });
 
+  // Things not working: 1) clicking to go back to animate URL (pausing works), 2) how to make newly added buttons work.
 
+
+  }
