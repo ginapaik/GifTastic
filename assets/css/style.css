@@ -19,3 +19,7 @@ h2 {
     float: left;
     margin: 10px;
 }
+
+button:hover, #add-food:hover {
+    background-color: #96b3e7;
+}

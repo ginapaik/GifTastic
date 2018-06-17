@@ -28,7 +28,7 @@ function renderButtons() {
     foodList.push(food);
     // This clears the input textbox
     $("#food-input").val("");
-    // calling renderButtons which handles the processing of our foodList array
+    
     renderButtons();
     newButton();
     
@@ -78,7 +78,7 @@ function renderButtons() {
           // Prependng the foodDiv to the HTML page in the "#foodGifs" div
           $("#foodGifs").prepend(foodDiv);
         }
-
+        
         // Clicking gifs to pause and animate
         $("img").on("click", function() {
             var state = $(this).attr("data-state");
@@ -94,8 +94,7 @@ function renderButtons() {
         });
       });
   });
-
-  // Things not working: 1) clicking to go back to animate URL (pausing works), 2) how to make newly added buttons work.
-
-
   }
+
+
+  
