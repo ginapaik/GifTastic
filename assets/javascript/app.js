@@ -28,7 +28,6 @@ function renderButtons() {
     foodList.push(food);
     // This clears the input textbox
     $("#food-input").val("");
-    
     renderButtons();
     newButton();
     
@@ -78,11 +77,11 @@ function renderButtons() {
           // Prependng the foodDiv to the HTML page in the "#foodGifs" div
           $("#foodGifs").prepend(foodDiv);
         }
-        
+
         // Clicking gifs to pause and animate
         $("img").on("click", function() {
             var state = $(this).attr("data-state");
-            if (state = "animate") {
+            if (state === "animate") {
                 $(this).attr("src", $(this).attr("data-still"));
                 $(this).attr("data-state", "still");
             }
